@@ -93,9 +93,9 @@ You can customize the deployment by modifying the variables in `variables.tf` or
 
 ## Security Considerations
 
-- By default, SSH access is allowed from any IP (`0.0.0.0/0`). For better security, restrict SSH access to your IP address.
-- Regularly update the server using `apt-get update && apt-get upgrade`.
-- Review the Lightsail instance security settings periodically.
+For better security, it's highly recommended to restrict SSH access to your IP address. You can run the `update-ip.sh` script to do this automatically.
+
+Additionally, remember to periodically update your server by running `sudo apt-get update && sudo apt-get upgrade`.
 
 ## Useful Links
 
