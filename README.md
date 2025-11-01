@@ -9,6 +9,10 @@ The Terraform configuration is modularized into:
 - **VPC Module**: Manages networking configuration and security
 - **Server Module**: Handles the Lightsail instance and SSH key management
 
+## Terraform Details
+
+For a detailed explanation of the Terraform configuration, file structure, and created resources, please see the [Terraform Configuration Details](docs/terraform.md) document.
+
 ## Prerequisites
 
 - An [AWS Account](https://aws.amazon.com/account/): You'll need an AWS account to create the necessary resources. If you don't have one, you can create one for free.
@@ -86,7 +90,7 @@ You can customize the deployment by modifying the variables in `variables.tf` or
 
 ## Connecting to Your VPN Server
 
-1. Download the [Outline Manager](https://getoutline.org/get-started/) application.
+1. Download the [Outline Manager](https://getoutline.org/intl/en-GB/get-started/#step-1) application.
 2. Use the SSH key from the Terraform output to connect to your server and retrieve the Outline Manager connection details.
 3. Add the connection to Outline Manager and create access keys for your devices.
 4. Download the [Outline Client](https://getoutline.org/get-started/#step-3) on your devices and connect using the access keys.
