@@ -91,6 +91,8 @@ You can customize the deployment by modifying the variables in `variables.tf` or
 3. Add the connection to Outline Manager and create access keys for your devices.
 4. Download the [Outline Client](https://getoutline.org/get-started/#step-3) on your devices and connect using the access keys.
 
+**Note:** If you find that your server's IP address is being blocked, you can get a new server with a new IP address and `apiUrl` by running `terraform destroy` followed by `terraform apply`. Be aware that this will completely recreate your server.
+
 ## Security Considerations
 
 For better security, it's highly recommended to restrict SSH access to your IP address. You can run the `update-ip.sh` script to do this automatically.
