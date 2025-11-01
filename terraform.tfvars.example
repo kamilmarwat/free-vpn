@@ -1,0 +1,22 @@
+# Example configuration values for the Outline VPN deployment
+# Rename this file to terraform.tfvars to use these values
+
+# AWS Region (defaults to eu-central-1 if not specified)
+region = "eu-central-1"
+
+# CIDR blocks for SSH access - restrict to your IP for better security
+# Example: ssh_cidr_blocks = ["123.123.123.123/32"]
+ssh_cidr_blocks = ["0.0.0.0/0"]
+
+# Lightsail blueprint ID (Ubuntu version)
+blueprint_id = "ubuntu_24_04"
+
+# Lightsail bundle ID (instance size)
+# nano_2_0 is the cheapest, but you can choose others like:
+# - micro_2_0
+# - small_2_0
+# - medium_2_0
+bundle_id = "nano_2_0"
+
+# Environment tag
+environment = "production" 
